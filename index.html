@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+
+    <div class="body-container">
+<!--клас для створення верхньої частини сайту-->
+    <div id="home" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="rest-info">
+                <p>OPEN:&nbsp;<small> Mon-Sat 8am - 11pm</small></p>
+                <img src="logo.png">
+                <p>Call:&nbsp;<a href="tel:+38/*0503383754">+380980860580</a></p>
+            </div>
+            <div class="links">
+                <a href="https://www.instagram.com/"><img src="social/instagram.png"></a>
+                <a href="https://www.facebook.com/"><img src="social/facebook.png"></a>
+                <a href="https://web.telegram.org/"><img src="social/telegram.png"></a>
+                <a href="https://twitter.com/"><img src="social/twitter.png"></a>
+                <a href="https://plus.google.com/"><img src="social/google+.png"></a>
+            </div>
+        </div>
+    </div> 
+    <!--створення горизонтального меню-->
+    <nav class="nav nav-pills nav-justified">
+        <a class="nav-item nav-link smooth-scroll" href="#menu-header">Menu</a>
+        <a class="nav-item nav-link smooth-scroll" href="#aboutUs">About Us</a>
+        <a class="nav-item nav-link smooth-scroll" href="#gallery">Gallery</a>
+        <a class="nav-item nav-link smooth-scroll" href="#contact">Reservation</a>
+    </nav>
+<!--створення першого слайд-шоу-->
+    <div id="specials" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#specials" data-slide-to="0" class="active"></li>
+            <li data-target="#specials" data-slide-to="1"></li>
+            <li data-target="#specials" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="food1.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                        <h3>Best offers</h3>
+                        <h5>Take advantage of super-discount from LaPlace. Tasty - doesn't mean expensive</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="food2.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                        <h3>Discount</h3>
+                        <h5>-30% for all on your birthday</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="food3.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                        <h3>Super-offer</h3>
+                        <h5>Second dish for free</h5>
+                        <h5>14:00-17:00</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#specials" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#specials" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="menu-header">
+        <p>Menu</p>
+    </div>
+<!--створення меню ресторану-->
+    <section id="menu">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="drinks.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Drinks</h5>
+                <p class="card-text">Enjoy a frosty cold or hot drinks served in our LaPlace.</p>
+               
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                  Go to drinks menu
+                </button>
+<!--відкриття модального вікна з меню напоїв-->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Drinks</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+
+                                <div class="menu-list">            
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="juice.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name"> FRUIT JUICE </h5>
+                                                <h5 class="menu-price">$3.00</h5>
+                                                <h6>Cranberry / apple / orange</h6>
+                                                <h6 class="drink-blue">Top up with sparkling water to make a spritz for 50p</h6>
+                                            </div>
+
+                                            
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="smoothie.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name">BERRY BLAST SMOOTHIE</h5>
+                                                <h5 class="menu-price">$5.00</h5>
+                                                <h6>Blackcurrant, carrot, blueberry, blackberry, apple, chicory root and beetroot</h6>
+                                            </div>
+                                         </div>   
+<!--відкриття модального вікна з меню основних страв-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="main-dish.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Main dishes</h5>
+                    <p class="card-text">Our fresh salmon and schrod are from the cold waters of the North Atlantic.</p>
+                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1"> Go to main dishes menu
+                    </button>
+
+                    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            
+                                        <div class="menu-list">            
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="carbonara.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name"> Carbonara </h5>
+                                                <h5 class="menu-price">$6.80</h5>
+                                                <h6>Casarecce pasta with golden smoky pancetta, cracked black pepper & Parmesan</h6>
+                                            </div>
+
+                                            
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="steak.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name">FLASH STEAK</h5>
+                                                <h5 class="menu-price">$17.50</h5>
+                                                <h6>Marinated prime beef steak with herby garlic butter, rocket, Parmesan & a side of your choice</h6>
+                                            </div>
+
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="ravioli.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name">SPINACH & RICOTTA RAVIOLI</h5>
+                                                <h5 class="menu-price">$12.50</h5>
+                                                <h6>Buffalo ricotta & spinach half moons, tomato sauce, buffalo mozzarella & baby basil</h6>
+                                            </div>
+                                         </div> 
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="dessert.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Desserts</h5>
+                    <p class="card-text">We proudly serve local vanilla bean ice cream made for us by Gifford’s famous ice cream in Skowhegan, Maine.</p>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2"> Go to desserts menu
+                    </button>
+<!--відкриття модального вікна з меню десертів-->
+                    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            
+                                        <div class="menu-list">            
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="brownie.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name"> RICH CHOCOLATE BROWNIE </h5>
+                                                <h5 class="menu-price">$6.00</h5>
+                                                <h6>Chocolate sauce, salted caramel popcorn gelato & caramelised popcorn</h6>
+                                            </div>
+
+                                            
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="affogato.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name">AFFOGATO</h5>
+                                                <h5 class="menu-price">$5.00</h5>
+                                                <h6>Vanilla ice cream with a shot of piping hot espresso</h6>
+                                            </div>
+
+                                            <div class="menu-info">
+                                            <figure>
+                                                <img src="gelato.jpg" alt="image" />
+                                            </figure>
+                                                <h5 class="drink-name">GELATO & SORBET</h5>
+                                                <h5 class="menu-price">$5.00</h5>
+                                                <h6>Choose two scoops of any of our delicious flavours of gelato or sorbet, plus any two of our yummy toppings</h6>
+                                            </div>
+                                         </div> 
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+        </div>
+    </section>
+<!--створення нової секції-->
+    <section id="aboutUs">
+        <h1>About Us</h1>
+        <p>LaPlace Restaurant opened in 2009 and is located at the prestigious Darling Park precinct at 201 Sussex Street, Sydney.
+
+            LaPlace is the creative collaboration between two of Sydney's highly regarded food identities - Sydney Chef Martin Benn and renowned seafood wholesaler George Costi of De Costi Seafoods.
+            
+            The contemporary menu at LaPlace is unique utilising the best of seasonal produce and drawing inspiration from Japan. We offer a 5 course tasting menu and 9 course tasting menu Tuesday to Thursday dinner. On Friday evenings, Saturday lunch and Saturday evenings we offer a completely different 9 course tasting menu that evolves each week.
+            
+            Sydney Morning Herald restaurant critic Terry Durack describes the cuisine as: "smoky, sweet, crunchy, creamy, soft, gentle, toasty, scented, clear, brothy, earthy, floral. The focus is on texture and contrast even more than taste - there's always a crunch, always a cream. It's like the love-child of Tetsuya Wakuda and Rene Redzepi of Noma; a Nordic kaiseki.
+            
+            LaPlace's extensive wine list compiled by award winning Sommelier Rodney Setter offers more than twenty four wines by the glass and an eclectic selection of wines from around the globe.</p>
+            <h3>Meet our Partners</h3>
+            <div class="partners">
+                <a id="contentLink_1498257" href="http://en.macaotourism.gov.mo/index.php" class="contenthyperlink_link contenthyperlink_link_1218605">
+                    <img src="partners/partner1.jpg">
+                </a>
+                <a id="contentLink_1263384" href="https://www.theworlds50best.com/partners/spellegrino-acqua-panna" class="contenthyperlink_link contenthyperlink_link_1218605">
+                    <img src="partners/partner2.jpg">
+                </a>
+                <a id="contentLink_1498258" href="https://www.wynnpalace.com/en" class="contenthyperlink_link contenthyperlink_link_1218605">
+                    <img src="partners/partner3.jpg">
+                </a>
+                <a id="contentLink_1486059" href="https://www.miele.com/en/com/index.htm" class="contenthyperlink_link contenthyperlink_link_1218605">
+                    <img src="partners/partner4.jpg">
+                </a>
+                <a id="contentLink_1505477" href="http://elitultraluxuryvodka.com/" class="contenthyperlink_link contenthyperlink_link_1218605">
+                    <img src="partners/partner5.jpg">
+                </a>
+                <a id="contentLink_1263380" href="https://www.dinersclub.com/" class="contenthyperlink_link contenthyperlink_link_1218605">
+                    <img src="partners/partner6.jpg">
+                </a>
+            </div>
+    </section>
+<!--створення другого слайд-шоу-->
+    <div id="gallery">
+        <div id="foodGallery" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#foodGallery" data-slide-to="0" class="active"></li>
+                <li data-target="#foodGallery" data-slide-to="1"></li>
+                <li data-target="#foodGallery" data-slide-to="2"></li>
+                <li data-target="#foodGallery" data-slide-to="3"></li>
+                <li data-target="#foodGallery" data-slide-to="4"></li>
+                <li data-target="#foodGallery" data-slide-to="5"></li>
+                <li data-target="#foodGallery" data-slide-to="6"></li>
+                <li data-target="#foodGallery" data-slide-to="7"></li>
+                <li data-target="#foodGallery" data-slide-to="8"></li>
+                <li data-target="#foodGallery" data-slide-to="9"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-caption d-none d-md-block">
+                        <h3>Gallery</h3>
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="gallery/gallery1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery4.jpg" alt="4 slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery5.jpg" alt="5 slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery6.jpg" alt="6 slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery7.jpg" alt="7 slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery8.jpg" alt="8 slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery9.jpg" alt="9 slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gallery/gallery10.jpg" alt="10 slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#foodGallery" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#foodGallery" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+<!--створення нової секції з валідацією-->
+    <section id="contact">
+            <div class="contact-content">
+                <h1>Would you like to book a table?</h1>
+                <p class="write-us">Just write us your name and phone number</p>
+                <form id="contactForm">
+                    <input id="name" type="text" name="client-name" placeholder="Name">
+                    <span class="error-form" id="errorNameMessage"></span>
+                    <input id="phone" type="text" name="client-email" placeholder="+380XXXXXXXXX">
+                    <span class="error-form" id="errorPhoneMessage"></span>
+                    <input id="submit" type="submit" value="Book a Table">
+                </form>
+            </div>
+        </section>
+
+    <footer>
+        <p>©LaPlace 2018. All rigths reserved. 201, Sussex Street, Sydney</p>
+    </footer>
+<!--створення кнопки для переміщення в початок-->
+    <div id="goHome">
+            <a class="smooth-scroll" href="#home"><button>Home</button></a>
+    </div>
+<!--створення модального вікна у вигляді куба завантаження-->
+    <div class="modal fade loader" id="loader" tabindex="-1" role="dialog" aria-labelledby="loader" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-body loader1">
+           <div class="sk-folding-cube">
+              <div class="sk-cube1 sk-cube"></div>
+              <div class="sk-cube2 sk-cube"></div>
+              <div class="sk-cube4 sk-cube"></div>
+              <div class="sk-cube3 sk-cube"></div>
+            </div> 
+          </div>
+      </div>
+    </div>
+
+<div class="modal fade thanks" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content thanks3">
+      <div class="modal-body thanks1">
+        <h2 align="center">Thank you. We will contact you in few minutes</h2>
+        <button type="button" class="close" id="close" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="smooth-scroll.js"></script>
+    <script src="form-sender.js"></script>
+</body>
+</html>
